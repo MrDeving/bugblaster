@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BugBlaster AI</title>
+    <link rel="icon" type="image/png" href="bb-logo.png" sizes="32x32">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas id="digital-rain"></canvas>
-    <h1>BugBlaster AI</h1>
     <div class="chat-layout">
         <div class="sidebar">
             <button class="sidebar-btn" onclick="newChat()">New Chat</button>
@@ -20,12 +20,13 @@
         </div>
         <div class="chat-area">
             <div class="chat-box">
-                <div class="message ai">Hey, welcome to BugBlaster AI! I’m here to crush your tech glitches like cmd not opening or Wi-Fi dropping. Drop your issue, and let’s hack it!</div>
+                <div class="message ai">
+                    <p>Hey, welcome to BugBlaster AI! I’m here to crush your tech glitches like cmd not opening or Wi-Fi dropping. Drop your issue, and let’s hack it!</p>
+                </div>
             </div>
-            <div class="loading-animation" style="display: none;">...</div>
             <div class="chat-input">
-                <input type="text" id="chat-input" placeholder="Type your tech issue (e.g., cmd not opening, Wi-Fi drops)...">
-                <button class="send-btn" onclick="sendMessage()">Send</button>
+                <input type="text" id="chat-input" placeholder="...">
+                <button onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
